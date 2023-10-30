@@ -1,25 +1,19 @@
 # Read Me First
-The following was discovered as part of building this project:
-
-* The original package name 'com.t-dev.consulting.restful-web-services' is invalid and this project uses 'com.tdev.consulting.restfulwebservices' instead.
+Docker Compose Spring boot and MySQL
 
 # Getting Started
 
-### Reference Documentation
-For further reference, please consider the following sections:
+### Run the system
+We can easily run the whole with only a single command
+ * docker compose up
+Docker will pull the MySQL and Spring Boot images
+The services can be run on the background with command:
+* docker compose up -d
 
-* [Official Apache Maven documentation](https://maven.apache.org/guides/index.html)
-* [Spring Boot Maven Plugin Reference Guide](https://docs.spring.io/spring-boot/docs/3.1.4/maven-plugin/reference/html/)
-* [Create an OCI image](https://docs.spring.io/spring-boot/docs/3.1.4/maven-plugin/reference/html/#build-image)
-* [Spring Web](https://docs.spring.io/spring-boot/docs/3.1.4/reference/htmlsingle/index.html#web)
-* [Spring Data JPA](https://docs.spring.io/spring-boot/docs/3.1.4/reference/htmlsingle/index.html#data.sql.jpa-and-spring-data)
-* [Spring Boot DevTools](https://docs.spring.io/spring-boot/docs/3.1.4/reference/htmlsingle/index.html#using.devtools)
+### Stop the system
+Stopping all running containers is also simple command:
+* docker compose down
+If you need to stop and remove all containers, networks and all images used by any service in docker-compose.yml file, use the command:
+* docker compose down --rmi all
 
-### Guides
-The following guides illustrate how to use some features concretely:
-
-* [Building a RESTful Web Service](https://spring.io/guides/gs/rest-service/)
-* [Serving Web Content with Spring MVC](https://spring.io/guides/gs/serving-web-content/)
-* [Building REST services with Spring](https://spring.io/guides/tutorials/rest/)
-* [Accessing Data with JPA](https://spring.io/guides/gs/accessing-data-jpa/)
 

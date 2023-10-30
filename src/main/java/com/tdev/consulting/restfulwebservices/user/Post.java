@@ -37,8 +37,6 @@ public class Post {
 	public void setDescription(String description) {
 		this.description = description;
 	}
-
-	
 	
 	public User getUser() {
 		return user;

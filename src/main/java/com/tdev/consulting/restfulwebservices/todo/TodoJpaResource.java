@@ -19,7 +19,6 @@ public class TodoJpaResource {
 	public TodoJpaResource(TodoRepository todoRepository) {
 		this.todoRepository = todoRepository;
 	}
-
 	
 	@GetMapping("/users/{username}/todos")
 	public List<Todo> retrieveTodos(@PathVariable String username) {
